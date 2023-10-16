@@ -1,19 +1,17 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "esnext",
-    "baseUrl": "./",
-    "moduleResolution": "node",
+    "target": "es5",            // The JavaScript version you want to target
+    "module": "esnext",         // Specify the module code generation
+    "baseUrl": "./",            // Base directory for module resolution
+    "moduleResolution": "node", // Use Node.js-style module resolution
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": ["src/*"]          // Path aliases for easier imports
     },
     "lib": [
-      "esnext",
-      "dom",
+      "esnext",                 // Include ESNext features
+      "dom",                    // Include DOM types
       "dom.iterable",
-      "scripthost"
+      "scripthost"              // Include types for script host environments
     ]
   }
 }
